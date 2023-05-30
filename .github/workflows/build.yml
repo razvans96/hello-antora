@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Install git and rsync 📚
         run: |
-          apt-get update && apt-get install -y rsync git
+          apk update && apk add git rsync
 
       - uses: actions/checkout@v2
 
